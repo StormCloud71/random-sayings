@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Random Saying Page.</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+  </head>
+  <body>
+      <h1>Hello there!</h1>
+      <center><img src="{{ url_for('static',filename='FortuneTeller.svg') }}" height="250" width="250"></center>
+      <center><h2> The saying for today is...</h2>
+      <p> {{random_saying}}</p></center>
+  </body>
+</html>
