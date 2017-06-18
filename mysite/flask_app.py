@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def Random_saying():
-    con=mdb.connect('stormcloud71.mysql.pythonanywhere-services.com','stormcloud71','arumba_v1ct0r1a','stormcloud71$app_storage')
+    con=mdb.connect('******','*****','**********','******')
     cur=con.cursor()
     cur.execute("select saying from sayings order by rand() limit 1;")
     q=cur.fetchall()
